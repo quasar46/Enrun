@@ -1,0 +1,86 @@
+.main-footer {
+    background-color: $color-green;
+    padding-top: 70px;
+    padding-bottom: 90px;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        ul {
+            display: flex;
+            flex-direction: column;
+            width: calc(100% / 4 - 20px);
+            // flex: 1 0 767px;
+            // max-width: 767px;
+            li {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 5px;
+                a.logo {
+                    background-image: url("../images/svg/logo-footer.svg");
+                    width: 166px;
+                    height: 60px;
+                    background-repeat: no-repeat;
+                    @media (max-width: 1919px) {
+                        width: 124px;
+                    }
+                    @media (max-width: 1439px) {
+                        width: 90px;
+                    }
+                }
+
+                a,
+                span {
+                    font-size: 30px;
+                    font-weight: 700;
+                    color: $color-white;
+                    text-decoration: none;
+                    @media (max-width: 1919px) {
+                        font-size: 17px;
+                    }
+                    @media (max-width: 1439px) {
+                        font-size: 14px;
+                    }
+                }
+                &.mode {
+                    @media (max-width: 767px) {
+                        display: none;
+                    }
+                }
+            }
+            &:nth-child(3) {
+                text-align: center;
+                @media (max-width: 767px) {
+                    display: none;
+                }
+            }
+            &:nth-child(2) {
+                @media (max-width: 767px) {
+                    display: none;
+                }
+            }
+            @media (max-width: 767px) {
+                width: 100%;
+                align-items: center;
+                max-width: 170px;
+                margin: 0 auto;
+                text-align: center;
+            }
+            &:nth-child(4) {
+                li {
+                    &:nth-child(2) {
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+        }
+        @media (max-width: 767px) {
+            flex-direction: column;
+        }
+    }
+    @media (max-width: 1919px) {
+        padding-top: 50px;
+    }
+    @media (max-width: 767px) {
+        padding-bottom: 40px;
+    }
+}

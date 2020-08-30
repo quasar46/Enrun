@@ -1,0 +1,64 @@
+.hero {
+    position: relative;
+    margin-bottom: 50px;
+    h2 {
+        font-size: 80px;
+        font-weight: 700;
+        color: $color-white;
+        max-width: 600px;
+        // padding: 200px 0 200px 0;
+        @media(min-width: 2500px) {
+            font-size: 100px;
+        }
+        @media (max-width: 1919px) {
+            font-size: 58px;
+            // padding-top: 150px;
+            // padding-bottom: 180px;
+        }
+        @media (max-width: 1439px) {
+            font-size: 42px;
+            // margin-top: 110px;
+            // margin-bottom: 130px;
+            max-width: 767px;
+            // margin-left: 26%;
+        }
+        @media (max-width: 767px) {
+            // margin: auto;
+            // margin-bottom: 0;
+            background-color: rgba(0, 0, 0, 0.3);
+            // margin-top: 120px;
+            font-size: 21px;
+            text-align: center;
+            // padding-top: 17px;
+            // padding-bottom: 25px;
+            padding-top: 15px;
+            padding-bottom: 25px;
+        }
+    }
+    .hero-slick {
+        li.item {
+            background-size: cover;
+            background-image: url("../images/image_main_page.jpg");
+            padding-top: 260px;
+            padding-bottom: 210px;
+            @media (max-width: 1919px) {
+                padding-top: 150px;
+                padding-bottom: 180px;
+            }
+            @media (max-width: 1439px) {
+                padding-top: 110px;
+                padding-bottom: 130px;
+            }
+            @media (max-width: 767px) {
+                background-image: url("../images/image_main_page-mobile.jpg");
+                padding-bottom: 0;
+                .container {
+                    padding: 0;
+                }
+            }
+        }
+    }
+    @media (max-width: 767px) {
+        margin-bottom: 0;
+    }
+}

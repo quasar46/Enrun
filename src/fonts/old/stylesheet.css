@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'DIN-BoldAlternate';
+    src: url('DIN-BoldAlternate.otf');
+    src: local('Lora Bold'), local('Lora-Bold'),
+        url('DIN-BoldAlternate.woff') format('woff'),
+        url('DIN-BoldAlternate.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}

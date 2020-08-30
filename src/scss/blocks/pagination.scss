@@ -1,0 +1,26 @@
+.pagination {
+    display: flex;
+    margin: 0 auto;
+    li {
+        line-height: 34px;
+        padding: 0 10px;
+        margin-right: 10px;
+        &.item {
+            cursor: pointer;
+        }
+        &.item.active,
+        &.item:hover {
+            background-color: $color-green;
+            a {
+                color: #ffffff;
+            }
+        }
+        a,
+        span {
+            font-family: Arial;
+            font-size: 23px;
+            font-weight: 700;
+            color: #333333;
+        }
+    }
+}

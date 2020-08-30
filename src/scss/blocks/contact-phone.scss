@@ -1,0 +1,44 @@
+.contact-phone {
+    background-color: #333333;
+    line-height: 115px;
+    .container {
+        display: flex;
+        a {
+            padding-left: 120px;
+            text-transform: uppercase;
+            background-image: url("../images/svg/phone-2.svg");
+            background-size: 70px auto;
+            background-position: left;
+            background-repeat: no-repeat;
+            font-size: 48px;
+            font-weight: 700;
+            color: $color-white;
+            text-decoration: none;
+            @media (max-width: 1919px) {
+                font-size: 24px;
+                background-size: 58px auto;
+            }
+            @media (max-width: 1439px) {
+                background-size: 42px auto;
+                padding-left: 70px;
+            }
+            @media (max-width: 767px) {
+                padding-left: 0;
+                font-size: 18px;
+                background-size: 38px auto;
+                background-position: top center;
+                margin: 0 auto;
+            }
+        }
+    }
+    @media (max-width: 1919px) {
+        line-height: 85px;
+    }
+    @media (max-width: 767px) {
+        line-height: 112px;
+        height: 112px;
+        letter-spacing: -1px;
+        text-align: center;
+        padding: 15px 0;
+    }
+}

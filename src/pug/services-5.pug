@@ -1,0 +1,114 @@
+doctype html
+html(lang="ru")
+    head
+        include modules/head.pug
+    body
+        .content
+            include modules/header.pug
+
+            main
+                section.services(style="background-image: url('../images/bg/bg-5.jpg');")
+                    .services__hero
+                    .container
+                        .services__tabs#tabs
+                            //- tab-header
+                            .tab-header
+                                .tab-header__content.tab-header__content--1
+                                    .picture
+                                        img#preview(src="images/previews/services-pic15.jpg" alt="")
+                                    h2.title-services Устройство дренажа
+                                    .content
+                                        p.text-services Компания Enrun предоставляет услуги по защите территории от подтапливания и размытия. Мы устанавливаем ливневые и дренажные канализации в комплексе или по отдельности в зависимости от особенностей участка и требований клиента.
+                                .tab-header__list
+                                    //- tab links
+                                    ul.tab.tabs-nav
+                                        li.title
+                                            span Наши услуги
+                                        li
+                                            a(href="services-1.html") Дороги и проезды
+                                        li
+                                            a(href="services-2.html") Озеленение территорий
+                                        li
+                                            a(href="services-3.html") Промышленные ограждения
+                                        li
+                                            a(href="services-4.html") Наружное освещение
+                                        li.active
+                                            a Устройство дренажа
+                                        li
+                                            a(href="services-6.html") Земляные работы
+                            //- tab content
+                            //- tab-footer 1 дороги и проезды
+                            .tabs-items
+                                //- tab-footer 5 устройство дренажа
+                                .tab-footer#tab-5.active
+                                    .tab-footer__list
+                                        ul
+                                            li
+                                                a(href="#tab-mini-15").active Ливневая канализация
+                                            li
+                                                a(href="#tab-mini-16") Дренажная канализация
+
+                                    .tab-footer__wrapper
+                                        .tab-footer__content.active#tab-mini-15
+                                            .content
+                                                h3 ЛИВНЕВАЯ КАНАЛИЗАЦИЯ
+                                                p Способствует освобождению территорий от избыточной воды, в результате чего не ухудшается дорожное покрытие и продлевается срок его службы; предупреждает намокание фундаментов, отмостков, размытие грунта; предотвращает скопление дождевой и талой воды в лужи, чем улучшает эстетичный вид участков.
+                                                p Ливневка состоит из двух частей — наружной (желоба под крышей) и подземной (приемники и трубы, отводящие воду от дома). В часть, которая находится в земле, попадает вода с крыши и отмостки, а далее выводится с участка.
+                                                h4 В систему входит:
+                                                ul.list
+                                                    li.item • желоба куда попадает вода с крыш;
+                                                    li.item • воронки и вертикальные трубы. в воронки попадает вода и далее, по вертикальным трубам попадает в нижнюю часть «ливневки»;
+                                                    li.item • хомуты для укрепления труб при их соединении;
+                                                    li.item • тройники и поворотные колена, которые связывают горизонтальные и вертикальные трубы между собой, также туда может крепиться воронка;
+                                                    li.item • колодцы.
+
+                                            .picture
+                                                img(src="images/services/image12.jpg" alt="")
+                                                img(src="images/services/image13.jpg" alt="")
+                                        .tab-footer__content#tab-mini-16
+                                            .content
+                                                h3 Дренажная КАНАЛИЗАЦИЯ
+                                                p Основная задача дренажа — не допустить повышение уровня грунтовых вод,предотвратить затопление участка. Помогает собирать лишнюю воду изгрунта, т.е. осушать его.
+                                                p Располагается только под землей, относится к закрытому типу канализационных систем. Колодцы — единственные элементы, которые частично располагаются над поверхностью.
+                                                h4 В систему входит:
+                                                ul.list
+                                                    li.item • Дрены (дренажные трубы для канализации из геотекстиля и с перфорацией, через которую вода попадает в дренаж).
+                                                    li.item • Пескоуловители (препятствуют засору труб при частом попадании ила и песка).
+                                                    li.item • Система водоотвода (ведет очищенную от ила и песка воду прямо в дренажные колодцы).
+                                                    li.item • колодцы.
+                                                p После колодцев, где вода очищается, она попадает в общий накопитель, а далее, либо используются для личных нужд, либо выводится в сточную систему.
+
+                                            .picture
+                                                img(src="images/services/image27.jpg" alt="")
+                                                img(src="images/services/image28.jpg" alt="")
+
+
+
+
+                .container
+                    .tab-header__list.tab-header__list--mobile
+                        //- tab links
+                        ul.tab.tabs-nav
+                            li.title
+                                span Наши услуги
+                            li
+                                a(href="services-1.html") Дороги и проезды
+                            li
+                                a(href="services-2.html") Озеленение территорий
+                            li
+                                a(href="services-3.html") Промышленные ограждения
+                            li
+                                a(href="services-4.html") Наружное освещение
+                            li.active
+                                a Устройство дренажа
+                            li
+                                a(href="services-6.html") Земляные работы
+
+
+
+                include modules/contacts-phone.pug
+
+
+        include modules/footer.pug
+        //- include modules/menu-mobile.pug
+        include modules/script.pug

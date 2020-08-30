@@ -1,0 +1,82 @@
+doctype html
+html(lang="ru")
+	head
+		include modules/head.pug
+	body
+		.content
+			include modules/header.pug
+
+			main
+				section.hero
+					.hero__wrapper
+						ul.hero-slick
+							li.item
+								.container
+									h2 Услуги по благоустройству территории
+				section.main-description
+					.container
+						.col
+							p Компания Enrun предоставляет комплекс услуг по благоустройству территории промышленных объектов и объектов жилой недвижимости.
+							p Мы помогаем улучшить внешний вид территории, делаем ее безопасной, удобной и функциональной.
+						ul.col
+							li
+								.picture
+									img(src="images/svg/pic1.svg" alt="")
+								p Каждый проект – уникален. Подбираем оптимальное предложение и достигаем необходимых заказчику результатов.
+							li
+								.picture
+									img(src="images/svg/pic2.svg" alt="")
+								p Выполняем работы быстро, эффективно и качественно. Предлагаем клиенту пути оптимизации бюджета, экономим его деньги и время.
+							li
+								.picture
+									img(src="images/svg/pic3.svg" alt="")
+								p Во всем, что делаем, стремимся завоевать доверие клиентов и партнеров. Всегда выполняем свои обязательства в соответствии с договоренностями.
+				section.sphere
+					.container
+						h2.title Сфера деятельности
+						.sphere-slick
+							a.item(href="services-1.html")
+								.picture.picture--1
+								p Дороги и проезды
+							a.item(href="services-2.html")
+								.picture.picture--2
+								p Озеленение <br> территорий
+							a.item(href="services-3.html")
+								.picture.picture--4
+								p Промышленные <br> ограждения
+							a.item(href="services-4.html")
+								.picture.picture--3
+								p Наружное <br> освещение
+							a.item(href="services-5.html")
+								.picture.picture--5
+								p Устройство <br> дренажа
+							a.item(href="services-6.html")
+								.picture.picture--6
+								p Земляные <br> работы
+
+
+				section.how-work
+					.container
+						.how-work__wrapper
+							.col.content
+								h2.main-title Как мы работаем
+								p Наша команда	состоит из высококвалифицированных инженеров, технических специалистов, имеющих огромный опыт управления проектами по благоустройству, профессиональных строителей и специалистов по озеленению.
+							.col.picture
+
+				section.clients
+					.container
+						h2.main-title Наши клиенты
+						.client__list
+							img(src="images/clients.jpg" alt="")
+
+				include modules/contacts-phone.pug
+
+
+
+
+
+
+
+		include modules/footer.pug
+		//- include modules/menu-mobile.pug
+		include modules/script.pug

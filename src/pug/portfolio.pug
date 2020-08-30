@@ -1,0 +1,49 @@
+doctype html
+html(lang="ru")
+    head
+        include modules/head.pug
+    body
+        .content
+            include modules/header.pug
+
+            main
+                section.portfolio
+                    .container
+                        .portfolio__wrapper
+                            ul.portfolio__list
+                                li
+                                    a(href="images/portfolio/image2.jpg" data-fancybox="gallery")
+                                        img(src="images/portfolio/image2.jpg" alt="")
+                                li
+                                    a(href="images/portfolio/image2.jpg" data-fancybox="gallery")
+                                        img(src="images/portfolio/image2.jpg" alt="")
+                                li
+                                    a(href="images/portfolio/image3.jpg" data-fancybox="gallery")
+                                        img(src="images/portfolio/image3.jpg" alt="")
+                                li
+                                    a(href="images/portfolio/image4.jpg" data-fancybox="gallery")
+                                        img(src="images/portfolio/image4.jpg" alt="")
+                                li
+                                    a(href="images/portfolio/image5.jpg" data-fancybox="gallery")
+                                        img(src="images/portfolio/image5.jpg" alt="")
+                                li
+                                    a(href="images/portfolio/image6.jpg" data-fancybox="gallery")
+                                        img(src="images/portfolio/image6.jpg" alt="")
+                            ul.pagination
+                                li.item.active
+                                    a 1
+                                li.item
+                                    a 2
+                                li.item
+                                    a 3
+                                li
+                                    span ...
+                                li.item
+                                    a 16
+
+                include modules/contacts-phone.pug
+
+
+        include modules/footer.pug
+        //- include modules/menu-mobile.pug
+        include modules/script.pug
